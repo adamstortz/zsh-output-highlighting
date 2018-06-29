@@ -3,29 +3,20 @@ zsh-output-highlighting
 
 Syntax highlighting for command's output in zsh. Use cat, grep and awk with style !
 
-How to install
+Install
 --------------
 
-### With oh-my-zsh
+```sh
+brew install highlight
+git clone https://github.com/adamstortz/zsh-output-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-output-highlighting
+```
 
-* Download the script or clone this repository in [oh-my-zsh](http://github.com/robbyrussell/oh-my-zsh) plugins directory:
+Activate the plugin in `~/.zshrc`:
+-------------------
 
-        git clone https://github.com/adamstortz/zsh-output-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-output-highlighting
-
-* Activate the plugin in `~/.zshrc`:
-
-        plugins=( [plugins...] zsh-output-highlighting [plugins...] )
-
-* Source `~/.zshrc`  to take changes into account:
-
-        source ~/.zshrc
-
-Dependencies
-------------
-
-* highlight
-
-        brew install highlight # On OSX or use your regular package manager
+```
+plugins+=(zsh-output-highlighting)
+```
 
 How to tweak
 ------------
